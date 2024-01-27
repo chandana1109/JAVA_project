@@ -1,9 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
-
 public class num_guess {
     public static void main(String[] args) {
-
         Random NumberGenerated = new Random();
         int Correctguess = NumberGenerated.nextInt(15);
         int NumberTried = 0;
