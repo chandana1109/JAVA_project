@@ -45,4 +45,4 @@ public class num_guess {
         scanner.close();
     }
 
-};
+}
