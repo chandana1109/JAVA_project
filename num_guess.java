@@ -6,7 +6,6 @@ public class num_guess {
         Random NumberGenerated = new Random();
         int Correctguess = NumberGenerated.nextInt(20);
         int NumberTried = 0;
-        int NumberGuessed;
         int Max_Attempts = 10;
 
         Scanner sc = new Scanner(System.in);
@@ -23,7 +22,7 @@ public class num_guess {
 
         for (int i = 1; i <= Max_Attempts; i++) {
             System.out.println("Guess a number between 0 and 20:");
-            NumberGuessed = sc.nextInt();
+            int NumberGuessed = sc.nextInt();
             NumberTried++;
 
             if (NumberGuessed == Correctguess) {
@@ -44,8 +43,6 @@ public class num_guess {
         }
 
         System.out.println("Thank you for playing");
-
-        sc.close();
     }
 
 }
