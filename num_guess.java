@@ -3,8 +3,8 @@ import java.util.*;
 
 public class num_guess {
     public static void main(String[] args) {
-        Random NumberGenerated = new Random();
-        int Correctguess = NumberGenerated.nextInt(20);
+        Random NumGen = new Random();
+        int Correctguess = NumGen.nextInt(20);
         int NumberTried = 0;
         int Max_Attempts = 10;
 
@@ -16,7 +16,6 @@ public class num_guess {
             System.out.println("Please enter your name:");
             name = sc.nextLine();
         }
-        ;
 
         System.out.println("Hello " + name + "! Welcome to the Number guessing game.");
 
